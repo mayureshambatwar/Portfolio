@@ -20,10 +20,10 @@
 }
 
 .right {
-  max-width: 70%;
+  max-width: 85%;
 }
 
-.right .img-container {
+.img-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   position: relative;
@@ -31,7 +31,7 @@
   text-align: center;
 }
 
-.right .img {
+.right img {
   max-width: 100%;
   border: 1px solid #333;
 }
@@ -45,4 +45,10 @@
   grid-column: 4 / -1;
   grid-row: 1;
   z-index: 5;
+}
+@media screen and (max-width:640px) {
+  .right img {
+    width: 100%;
+    
+  }
 }

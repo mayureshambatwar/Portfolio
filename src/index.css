@@ -35,3 +35,29 @@ h1,h2,h3,h4,a,p{
     color: #fff;
     transition: 0.3s all ease-in-out;
 }
+
+@media screen and (max-width:640px) {
+    .btn{
+        padding: 12px 32px;
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: #000000;
+        background: rgb(248, 217, 15);
+        border: 1px solid #fff;
+        font-weight: 600;
+        cursor: pointer;
+         border-radius: 8px;
+    }
+    h1{
+        font-size: 24px;
+    }
+    .btn-light{
+        background:transparent;
+        color: #fff;
+    }
+    .btn:hover{
+        background: rgba(255, 255, 255, 0.2);
+        color: #fff;
+        transition: 0.3s all ease-in-out;
+    }
+ }
