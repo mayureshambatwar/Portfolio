@@ -13,10 +13,10 @@ const projectData = [
   },
   {
     imgsrc: Pro2,
-    title: "LMS/Course Website Design",
-    text: "Thriving Facebook community and top-ranked podcast, Amy inspires a grounded, tangible and self-affirming sense of Wow! I really can do this for over 100,000 online entrepreneurs. Best-selling marketing courses",
-    view:"https://www.youtube.com/watch?v=P8YuWEkTeuE",
-    source:"https://github.com/mayureshambatwar/E-commerce-Web"
+    title: "Power BI",
+    text: "Welcome, Students Are you ready to unlock the secrets of data analysis and visualization? Look no further! Our Power BI course is designed specifically for students like you, to help you master the skills needed to succeed in today's data-driven world.",
+    view:"https://power-bi-gamma.vercel.app/",
+    source:"https://github.com/mayureshambatwar/Power-Bi"
   },
   {
     imgsrc: Pro3,
