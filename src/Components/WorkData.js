@@ -20,10 +20,10 @@ const projectData = [
   },
   {
     imgsrc: Pro3,
-    title: "Rymo Ecommerce Design",
-    text: "Podcast Thriving Facebook community and top-ranked, Amy inspires a grounded, tangible and self-affirming sense of Wow! I really can do this for over 100,000 online entrepreneurs. Best-selling marketing courses",
-    view:"https://www.youtube.com/watch?v=P8YuWEkTeuE",
-    source:"https://github.com/mayureshambatwar/E-commerce-Web"
+    title: "Dashboard",
+    text: "The dashboard displays key metrics using graphs, charts, and tables. This could include things like sales data, system performance, user activity, or project progress. Dashboards are designed to be accessible across different devices (desktops, tablets, mobile phones), ensuring that the user experience is optimized for each",
+    view:"https://dashboard-main-murex.vercel.app/",
+    source:"https://github.com/mayureshambatwar/Dashboard"
   },
   {
     imgsrc: Pro4,
