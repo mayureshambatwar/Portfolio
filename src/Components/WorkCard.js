@@ -1,6 +1,5 @@
 import React from "react";
 import "./WorkCard.css";
-import Pro1 from "../assets/project1.png";
 import {  NavLink } from "react-router-dom";
 const WorkCard = (props) => {
   return (

@@ -1,54 +1,116 @@
-.about {
-  width: 100%;
-  margin: 3rem 0;
+.about-section {
+  padding: 2rem;
+}
+
+.about-header h1 {
+  font-size: 2.1em;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.purple {
+  color: #6c63ff;
+  font-weight: bold;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-text {
+  flex: 1;
+  margin-right: 2rem;
+  text-align: justify;
+}
+
+.about-text p {
+  line-height: 1.6;
+}
+
+.about-activity {
+  list-style: none;
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.about-activity svg {
+  margin-right: 0.5rem;
+  color: #fff;
+}
+
+.blockquote {
+  color: #fff;
+  margin-top: 1.5rem;
+  /* color: #9b7eac; */
+}
+
+.quote {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.blockquote-footer {
+  text-align: right;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.techstack-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.tech-icons {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  height: 100%;
+  height: 100px;
+  width: 200px;
+  color: #ffffff;
+  border: 2px solid #6c63ff;
+  margin: 1rem;
+  font-size: 3rem;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.about.left {
-  text-align: center;
-  margin: auto;
-  padding: 1rem;
-  max-width: 50%;
-}
-.about.left p {
-  text-align: center;
-  margin: 1.2rem 0;
+.tech-icons:hover {
+  transform: scale(1.1);
+  color: #6c63ff;
+  border: 2px solid #ffffff;
 }
 
-.right {
-  max-width: 85%;
+
+@media (max-width: 768px) {
+  .tech-icons {
+    font-size: 1.5rem;
+  }
 }
 
-.img-container {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  position: relative;
-  align-items: center;
-  text-align: center;
-}
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
 
-.right img {
-  max-width: 100%;
-  border: 1px solid #333;
-}
-.right .top {
-  grid-column: 1 / span 8;
-  grid-row: 1;
-  padding-top: 20%;
-  z-index: 6;
-}
-.right .bottom {
-  grid-column: 4 / -1;
-  grid-row: 1;
-  z-index: 5;
-}
-@media screen and (max-width:640px) {
-  .right img {
-    width: 100%;
-    
+  .about-text {
+    margin-right: 0;
+    margin-bottom: 2rem;
   }
 }

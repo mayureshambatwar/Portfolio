@@ -19,6 +19,7 @@ form input ,form textarea{
     color: #f4f4f4;
 }
 
+
 @media screen and (max-width:640px) {
     form input ,form textarea{
         margin-bottom: 1rem;

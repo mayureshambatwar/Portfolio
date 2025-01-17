@@ -5,8 +5,10 @@ import {
   FaGithub,
   FaHome,
   FaInstagram,
+  FaLinkedinIn,
   FaMailBulk,
   FaPhone,
+  FaWhatsapp,
 } from "react-icons/fa";
 
 const Footer = () => {
@@ -15,10 +17,11 @@ const Footer = () => {
       <div className="footer-container">
         <div className="left">
           <div className="location">
-            <FaHome size={20} style={{ color: "#fff", marginRight: "2rem" }} />
+            <FaHome size={40} style={{ color: "#fff", marginRight: "2rem" }} />
             <div>
-              <p>123 Housing Society</p>
-              <p>India.</p>
+              <p>Current Location</p>
+              <p> Lane No 4, Old Sai Baba Mandir Rd, near Sai Baba Temple, Raghavendra Nagar, Kharadi, Pune, Maharashtra 411014</p>
+              
             </div>
           </div>
           <div className="phone">
@@ -28,6 +31,10 @@ const Footer = () => {
                 style={{ color: "#fff", marginRight: "2rem" }}
               />
               92846-310-83
+            <a href="https://wa.me/9284631083?text=Hi, it's great to see you!">
+            <FaWhatsapp  size={30}
+                style={{ color: "#fff", marginLeft: "1.7rem" ,textAlign:"center" ,}}/>
+            </a>
             </h4>
           </div>
           <div className="email">
@@ -36,21 +43,15 @@ const Footer = () => {
                 size={20}
                 style={{ color: "#fff", marginRight: "2rem" }}
               />
-              <a
-                href="mailto:mayureshambatwar@gmail.com"
-                className="mail"
-              >
+              <a href="mailto:mayureshambatwar@gmail.com" className="mail">
                 mayureshambatwar@gmail.com
               </a>
             </h4>
           </div>
         </div>
         <div className="right">
-          <h4>About this Company</h4>
-          <p>
-            This is me Mayuresh. CEO & Founder. I enjoy discussing new
-            projects and design challenges.
-          </p>
+          <h4> FIND ME ON</h4>
+          <p>Feel free to connect with me</p>
           <div className="social">
             <a
               href="https://www.facebook.com/mayuresh.ambatwar"
@@ -58,7 +59,7 @@ const Footer = () => {
               rel="noopener noreferrer"
             >
               <FaFacebook
-                size={30}
+                size={40}
                 style={{ color: "#fff", marginRight: "1rem" }}
               />
             </a>
@@ -68,7 +69,7 @@ const Footer = () => {
               rel="noopener noreferrer"
             >
               <FaInstagram
-                size={30}
+                size={40}
                 style={{ color: "#fff", marginRight: "1rem" }}
               />
             </a>
@@ -78,7 +79,17 @@ const Footer = () => {
               rel="noopener noreferrer"
             >
               <FaGithub
-                size={30}
+                size={40}
+                style={{ color: "#fff", marginRight: "1rem" }}
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/mayuresh-ambatwar/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedinIn
+                size={40}
                 style={{ color: "#fff", marginRight: "1rem" }}
               />
             </a>

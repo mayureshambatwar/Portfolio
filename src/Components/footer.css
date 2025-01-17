@@ -43,11 +43,38 @@ h4{
 p{
     font-size: 1.2rem;
 }
+.phone{
+    display: flex;
+    align-items: center;
+}
 .mail{
     color: #fff;
     text-decoration: none;
     
 }
+.linkedIn{
+    color: #fff;
+    text-decoration: none;
+    
+}
+.social a {
+    display: inline-block;
+    margin-right: 1rem;
+    color: #fff;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .social a:hover {
+    transform: scale(1.2); 
+    color: #1877f2; 
+  }
+  
+  .social a:hover svg {
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+  }
+  
 
 @media screen and (max-width:640px) {
     .footer-container{

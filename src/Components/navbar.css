@@ -3,7 +3,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  /* position: fixed; */
 }
 .header-bg{
   background-color: rgba(0, 0, 0, 0.9);
@@ -21,7 +20,64 @@
 .nav li a {
   font-size: 24px;
   font-weight: 700;
+  position: relative;
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s ease;
 }
+
+.nav li a:hover {
+  background: linear-gradient(90deg, #ff5722, #ff9800);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav li a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #ff5722, #ff9800);
+  transition: width 0.4s ease, left 0.4s ease;
+}
+
+.nav li a:hover::after {
+  width: 100%;
+  left: 0;
+  animation: underlineSlide 0.3s ease-in-out; 
+}
+
+.header-bg {
+  background: linear-gradient(90deg, #000428, #004e92);
+  transition: background-color 0.5s;
+}
+
+.nav li a.active {
+  color: #ff5722;
+  font-weight: 900;
+}
+
+@keyframes textGradient {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+@keyframes underlineSlide {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+
 
 .hamburger {
   display: none;

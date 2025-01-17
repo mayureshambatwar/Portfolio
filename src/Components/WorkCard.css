@@ -2,18 +2,32 @@
   text-align: center;
   padding: 4rem 0 2rem 0;
 }
+
 .project-container {
   max-width: 1140px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
   gap: 40px;
   padding-bottom: 5rem;
 }
+
 .project-card {
   background: #1a1919;
   padding: 1.2rem 1rem;
+  width: 100%; /* Full width based on container */
+  box-sizing: border-box; /* Ensure padding doesn't affect size */
+  border-radius: 10px; /* Rounded corners */
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 16px rgba(148, 93, 93, 0.6), 0 1px 3px rgba(0, 0, 0, 0.4); /* Subtle shadow */
 }
+
+.project-card:hover {
+  background: #292828;
+  transform: scale(1.05);
+  box-shadow: 50px 25px 25px rgba(0, 0, 0, 0.7), 0 3px 6px rgba(0, 0, 0, 0.5); 
+}
+
 .project-card img {
   width: 100%;
 }
@@ -29,7 +43,7 @@
 .pro-btns{
     display: flex;
     justify-content: space-between;
-    /* padding: 0.5rem 1rem; */
+    padding: 0.5rem 1rem;
 
 }
 .pro-btns .btn{
@@ -38,10 +52,14 @@
 
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 900px) {
   .project-container {
-    max-width: 1140px;
-    margin: auto;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .project-container {
+    grid-template-columns: 1fr; 
   }
 }
