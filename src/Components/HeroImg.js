@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import Type from "./Type";
 import { Col } from "react-bootstrap";
-import { color } from "framer-motion";
 
 const HeroImg = () => {
   const contentRef = useRef(null);
@@ -40,7 +39,7 @@ const HeroImg = () => {
   return (
     <div className="hero">
       <div className="mask">
-        <img src={IntroImg} alt="IntroImg" className="intro-img" />
+        <img src="https://abha2510.github.io/static/media/bg.61e3b6116cf9298ff56e.gif" alt="IntroImg" className="intro-img" />
       </div>
       <div className="content" ref={contentRef}>
        <div className="">

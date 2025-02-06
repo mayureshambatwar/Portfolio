@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color: #000000;
+    background-color: rgb(19, 28, 49);
 }
 
 h1,h2,h3,h4,a,p{
@@ -20,7 +20,7 @@ h1,h2,h3,h4,a,p{
     font-size: 1rem;
     text-transform: uppercase;
     color: #000000;
-    background: rgb(248, 217, 15);
+    background: linear-gradient(90deg, #3de5b3, #00ffb3);
     border: 1px solid #fff;
     font-weight: 600;
     cursor: pointer;
@@ -31,7 +31,7 @@ h1,h2,h3,h4,a,p{
     color: #fff;
 }
 .btn:hover{
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.332);
     color: #fff;
     transition: 0.3s all ease-in-out;
 }
@@ -42,7 +42,7 @@ h1,h2,h3,h4,a,p{
         font-size: 1rem;
         text-transform: uppercase;
         color: #000000;
-        background: rgb(248, 217, 15);
+        background: linear-gradient(90deg, #3de5b3, #00ffb3);
         border: 1px solid #fff;
         font-weight: 600;
         cursor: pointer;
@@ -61,3 +61,30 @@ h1,h2,h3,h4,a,p{
         transition: 0.3s all ease-in-out;
     }
  }
+ /* index.css */
+.app.light {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  .app.dark {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  .theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px 15px;
+    background-color: #6c63ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .theme-toggle:hover {
+    opacity: 0.9;
+  }
+  

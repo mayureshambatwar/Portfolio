@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./navbar.css";
 import { Link } from "react-router-dom";
+import resume from '../assets/resume.pdf'
 import{FaBars, FaTimes} from "react-icons/fa"
 const Navbar = () => {
   const [click,setClick] = useState(false)
@@ -35,6 +36,11 @@ const Navbar = () => {
 
         <li>
           <Link to="/contact">Contact</Link>
+        </li>
+        <li>
+        <a href={resume} download className="bg-purple-600 text-white px-6 py-2 rounded-lg mt-20">
+        ⬇ Download CV
+      </a>
         </li>
       </ul>
       <div className="hamburger" onClick={handelClick}>

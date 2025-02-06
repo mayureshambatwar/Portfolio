@@ -3,6 +3,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+ background: linear-gradient(180deg, #2c3edf, #0188ff);
+transition: background-color 0.5s;
+
+
 }
 .header-bg{
   background-color: rgba(0, 0, 0, 0.9);
