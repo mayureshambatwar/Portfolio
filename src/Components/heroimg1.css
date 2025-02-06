@@ -32,6 +32,7 @@
 }
 
 @media screen and (max-width: 640px) {
+  
   .hero-img {
     height: 24vh;
   }
